@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.ja.rsa.MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="35dp" />
+
+
+    <Button
+        android:id="@+id/przejdz_do_szyfrowanie_button"
+        android:text="Szyfrowanie"
+        android:textColor="#D4A039"
+        android:textSize="23sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="5"
+        android:shadowDy="0"
+        android:shadowRadius="6"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="przejdz_do_szyfruj"/>
+
+    <Button
+        android:id="@+id/przejdz_do_odszyfrowanie_button"
+        android:text="Odszyfrowanie"
+        android:textColor="#D4A039"
+        android:textSize="23sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="5"
+        android:shadowDy="0"
+        android:shadowRadius="6"
+        android:layout_below="@+id/przejdz_do_szyfrowanie_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:onClick="przejdz_do_odszyfruj"/>
+
+    <Button
+        android:id="@+id/wyjscie_button"
+        android:text="Wyjdz"
+        android:textColor="#D4A039"
+        android:textSize="23sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="5"
+        android:shadowDy="0"
+        android:shadowRadius="6"
+        android:layout_below="@+id/przejdz_do_odszyfrowanie_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:onClick="wyjdz"/>
+</RelativeLayout>

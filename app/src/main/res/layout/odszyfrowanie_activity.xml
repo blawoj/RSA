@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.ja.rsa.MainActivity">
+
+
+    <Button
+        android:id="@+id/importuj_pryw_button"
+        android:text="Importuj"
+        android:textColor="#D4A039"
+        android:textSize="23sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshapesmall"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="5"
+        android:shadowDy="0"
+        android:shadowRadius="6"
+        android:layout_above="@+id/odszyfruj_button"
+        android:layout_alignStart="@+id/odszyfruj_button"
+        android:layout_marginBottom="7dp"
+        android:onClick="importuj_prywatny"/>
+
+    <Button
+        android:id="@+id/odszyfruj_button"
+        android:text="Odszyfruj"
+        android:textColor="#D4A039"
+        android:textSize="23sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshapesmall"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="5"
+        android:shadowDy="0"
+        android:shadowRadius="6"
+        android:onClick="odszyfruj"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:id="@+id/powrot_button"
+        android:text="Powrót"
+        android:textColor="#D4A039"
+        android:textSize="23sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshapesmall"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="5"
+        android:shadowDy="0"
+        android:shadowRadius="6"
+        android:onClick="powrot"
+        android:layout_below="@+id/importuj_pryw_button"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/wklej_button"
+        android:text="Wklej"
+        android:textColor="#D4A039"
+        android:textSize="23sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshapesmall"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="5"
+        android:shadowDy="0"
+        android:shadowRadius="6"
+        android:onClick="wklej"
+        android:layout_alignTop="@+id/importuj_pryw_button"
+        android:layout_alignStart="@+id/powrot_button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/odszyfrowanie_edittext"
+        android:inputType="textMultiLine"
+        android:hint="Wprowadź tekst do odszyfrowania"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
